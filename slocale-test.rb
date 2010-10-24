@@ -1,10 +1,12 @@
 #!/usr/bin/ruby
 require 'slocale'
+def f
+	puts [ SLocale.locale, Time.now.strftime("%x"), 5.4.to_s, Time.now.to_s ]
+	puts
+end
 
-puts 'G:'+SLocale.locale
-puts 'S:'+SLocale.locale=""
-puts 'G:'+SLocale.locale
-puts 'S:'+SLocale.locale="cs_CZ.UTF-8"
-puts 'G:'+SLocale.locale
-puts 'S:'+SLocale.locale="C"
-puts 'G:'+SLocale.locale
+f
+SLocale.locale = ''
+f
+SLocale.locale = 'cs_CZ.UTF-8'
+f
