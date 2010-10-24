@@ -1,0 +1,14 @@
+libslocale-ruby
+a simple ruby C setlocale() library
+(c) Martin Hradil, 2010, LGPL
+
+
+Provides ruby interface to the C setlocale() function.
+
+require 'slocale'
+SLocale.setlocale('')	# or SLocale.locale = '' ; loads locale fron environment
+SLocale.locale = 'en_US.UTF-8'	# explicitly sets locale, returns nil if not successful
+puts SLocale.getlocale	# or SLocale.locale ; returns current locale
+
+
+The main motivation behind this lib is that new liblocale-ruby doesn't do this, so stuff like Time.now.strftime("%x") didn't work.
