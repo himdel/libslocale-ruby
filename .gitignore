@@ -1,3 +1,7 @@
 slocale.so
 slocale.o
 Makefile
+debian/files
+debian/libslocale-ruby.substvars
+debian/libslocale-ruby.debhelper.log
+debian/libslocale-ruby/
