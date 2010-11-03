@@ -1,15 +1,16 @@
 Source: libslocale-ruby
-Section: unknown
+Section: ruby
 Priority: extra
-Maintainer: Martin Hradil <himdel@seznam.cz>
+Maintainer: Martin Hradil <martin.hradil@solnet.cz>
 Build-Depends: debhelper (>= 7.0.50~)
 Standards-Version: 3.8.4
 Homepage: http://github.com/himdel/libslocale-ruby
 Vcs-Git: git://github.com/himdel/libslocale-ruby.git
 Vcs-Browser: http://github.com/himdel/libslocale-ruby
 
-Package: libslocale-ruby
-Architecture: all
+Package: libslocale-ruby1.8
+Architecture: any
 Depends: ${misc:Depends}, ruby
 Description: simple C locale lib for ruby
- SLocale for ruby, implements only SLocale.{get,set}locale (and SLocale.locale{,=} aliases) that call the C setlocale() function
+ SLocale for ruby, implements only SLocale.{get,set}locale
+ (and SLocale.locale{,=} aliases) that call the C setlocale() function
